@@ -1,27 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="./styles/dist/style.css">
-</head>
-<body class="container-fluid min-vh-100 p-0 m-0 d-flex flex-column">
+    <link rel="stylesheet" href="./styles/dist/style.css" />
+  </head>
+  <body class="container-fluid min-vh-100 p-0 m-0 d-flex flex-column">
     <header class="row p-0 m-0 d-flex flex-row bg-body-secondary">
-        <div class="col-1 p-0 m-0 d-flex flex-column justify-content-center align-content-start ">
-            <img class="img-menu" src="/assets/list.svg" alt="">
+      <div
+        class="col-2 p-0 m-0 d-flex flex-column justify-content-center align-content-start"
+      >
+        <img class="img-menu" src="/assets/list.svg" alt="" />
+      </div>
+      <div class="col-9 d-flex flex-row align-items-center">
+        <img
+          class="img-logo"
+          height=""
+          src="/assets/marcador-de-posicion.png"
+          alt=""
+        />
+        <h1 style="font-size: 55px">El Rooselvelt</h1>
+      </div>
+      <div class="col-1 profile-menu-container">
+        <img src="/assets/person-circle.svg" class="img-login" onclick="toggleMenu()" />
+        <div class="profile-menu" id="profileMenu">
+          <a href="#">Perfil</a>
+          <a href="#">Cambiar Cuenta</a>
+          <a href="#">Cerrar sesión</a>
         </div>
-        <div class="col-10  d-flex flex-row align-items-center">
-            <img class="img-logo" height="" src="/assets/marcador-de-posicion.png" alt=""><h1>El Rooselvelt</h1>
-        </div>
-        <div class="col-1 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
-            <img class="img-login" src="/assets/person-circle.svg" alt="">
-        </div>
+      </div>
+
+      <!--<div
+        class="dropdown col-1 p-0 m-0 d-flex flex-column justify-content-center align-items-center"
+      >
+        <img class="img-login" src="/assets/person-circle.svg" alt="" />
+      </div>-->
     </header>
     <main class="row">
-        <nav></nav>
-        <section></section>
+      <nav></nav>
+      <section></section>
     </main>
     <footer class="row"></footer>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -17,8 +17,7 @@
     }
 
     .sidebar .nav-link span,
-    .sidebar .nav-link,
-    .sidebar .nav-link .nav-item{
+    .sidebar .nav-link{
       display: none;
     }
 
@@ -175,13 +174,14 @@
             <span>Configuración</span>
           </a>
         </li>
-
       </ul>
-    </div>
-  </div>
-          <section class="text-center">
-            <h1 class="display-1 mb-3">Roosevelt es tu compañero indispensable en terrenos difíciles.</h1>
 
+    </div>
+          <div class="tab-content w-100 p-4">
+            <div class="tab-pane fade show active" id="home">
+                <section class="text-center">
+            <h1 class="display-1 mb-3">El Roosevelt</h1>
+            <h3 class="display-5 mb-3">Tu compañero indispensable en terrenos difíciles.</h3>
             <p class="lead mb-4">Roosevelt es una aplicación de mapas creada para ayudar a las personas mayores o con
                 discapacidades a desplazarse por zonas de difícil acceso en una ciudad o pueblo.
                 ¡Os ayudaremos a orientaros rápidamente, evitar zonas peligrosas y encontrar lugares interesantes!
@@ -195,6 +195,22 @@
 
             <a href="#">Ir al mapa</a>
         </section>
+            </div>
+            <div class="tab-pane fade show" id="dashboard">
+                <h1>Dashboard content</h1>
+                <p>Welcome to the dashboard section.</p>
+            </div>
+            <div class="tab-pane fade show" id="orders">
+                <h1>Orders content</h1>
+                <p>Welcome to the orders section.</p>
+            </div>
+            <div class="tab-pane fade show" id="products">
+                <h1>Products content</h1>
+                <p>Welcome to the products section.</p>
+            </div>
+        </div>
+  </div>
+          
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const sidebar = document.getElementById("sidebar");

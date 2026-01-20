@@ -6,3 +6,32 @@ $dark: #0D4715;
 //example
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.img-logo {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  transition: all 0.5s;
+}
+.img-logo:hover {
+  transform: scale(1.1);  
+}
+.img-login {
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+  transition: all 0.5s;
+}
+.img-login:hover {
+  transform: scale(1.1);  
+}
+
+.img-menu {
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+  transition: all 0.5s;
+}
+.img-menu:hover {
+  transform: scale(1.1);  
+}

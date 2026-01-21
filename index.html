@@ -25,78 +25,6 @@
   </head>
 
   <body>
-    <!-- <div class="container-fluid p-0 m-0 d-flex flex-column">
-      <header class="row p-0 m-0 d-flex flex-row bg-body-secondary">
-        <div
-          class="col-2 p-0 m-0 d-flex flex-column justify-content-center align-content-start"
-        >
-           <img class="img-menu" src="/assets/list.svg" alt="" /> 
-          <a
-            href="#"
-            class="nav-link py-3 border-bottom rounded-0 text-black"
-            data-bs-toggle="tab"
-            data-bs-target="#home"
-            id="toggleSidebar"
-          >
-             <span>~Menu~</span> 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="46"
-              height="46"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="col-9 d-flex flex-row align-items-center">
-           <img
-            class="img-logo"
-            height=""
-            src="/assets/marcador-de-posicion.png"
-            alt=""
-          /> 
-          <h1 style="font-size: 55px">El Rooselvelt</h1>
-        </div>
-        <div class="col-1 profile-menu-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="26"
-            fill="currentColor"
-            class="bi bi-person-circle"
-            viewBox="0 0 16 16"
-          >
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-            <path
-              fill-rule="evenodd"
-              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-            />
-          </svg>
-          - <img
-            src="/assets/person-circle.svg"
-            class="img-login"
-            onclick="toggleMenu()"
-          /> 
-          - <div class="profile-menu" id="profileMenu">
-            <a href="#">Perfil</a>
-            <a href="#">Cambiar Cuenta</a>
-            <a href="#">Cerrar sesión</a>
-          </div> 
-        </div>
-
-        <div
-        class="dropdown col-1 p-0 m-0 d-flex flex-column justify-content-center align-items-center"
-      >
-        <img class="img-login" src="/assets/person-circle.svg" alt="" />
-      </div>
-      </header>
-    </div> -->
     <header>
       <div
         class="container-fluid d-flex justify-content-between m-0 p-0 bg-secondary"
@@ -143,6 +71,11 @@
     <div class="container-fluid p-0 d-flex text-center">
       <div class="d-flex flex-column bg-body-tertiary sidebar" id="sidebar">
         <ul class="nav nav-pills flex-column vh-100">
+          <li class="nav-item">
+            <div class="">
+              <span class="m-5">Menu</span>
+            </div>
+          </li>
           <li class="nav-item">
             <a
               href="#"
@@ -298,27 +231,30 @@
       </div>
       <div class="tab-content w-100 p-4">
         <div class="tab-pane fade show active" id="home">
-          <section class="text-center">
-            <h1 class="display-1 mb-3">El Roosevelt</h1>
-            <h3 class="display-5 mb-3">
-              Tu compañero indispensable en terrenos difíciles.
-            </h3>
-            <p class="lead mb-4">
-              Roosevelt es una aplicación de mapas creada para ayudar a las
-              personas mayores o con discapacidades a desplazarse por zonas de
-              difícil acceso en una ciudad o pueblo. ¡Os ayudaremos a orientaros
-              rápidamente, evitar zonas peligrosas y encontrar lugares
-              interesantes!
-            </p>
-
-            <div class="mb-4">
-              <img
-                src="./assets/ruta_alicante.jpg"
-                class="img-fluid rounded"
-                alt="ruta_alicante"
-              />
+          <section
+            class="d-flex flex-column text-center align-items-center"
+          >
+            <h1 class="display-2 fw-bold">El Roosevelt</h1>
+            <div class="d-flex justify-content-center mx-5 my-3 border border-2 rounded rounded-3 py-5 bg-secondary">
+              <div class="d-flex flex-column justify-content-center w-50 px-5">
+                <h3 class="display-5 mb-3">Tu compañero indispensable.</h3>
+                <p class="lead text-light">
+                  Roosevelt es una aplicación de mapas creada para ayudar a las
+                  personas mayores o con discapacidades a desplazarse por zonas
+                  de difícil acceso en una ciudad o pueblo. ¡Os ayudaremos a
+                  orientaros rápidamente, evitar zonas peligrosas y encontrar
+                  lugares interesantes!
+                </p>
+                <button class="w-25 btn btn-primary align-self-center">Ir al mapa</button>
+              </div>
+              <div class="d-flex w-50 justify-content-end">
+                <img 
+                  src="./assets/ruta_alicante.jpg"
+                  class="img-fluid rounded rounded-4 w-75 pe-5"
+                  alt="ruta_alicante"
+                />
+              </div>
             </div>
-            <a href="#">Ir al mapa</a>
           </section>
           <section>
             <form></form>
@@ -357,5 +293,10 @@
       </div>
     </footer>
     <script src="script/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

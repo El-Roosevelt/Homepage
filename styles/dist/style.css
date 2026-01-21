@@ -11993,5 +11993,19 @@ textarea.form-control-lg {
     padding-bottom: 16px !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, .h1 {
+  color: #3C1053;
+}
+
+a {
+  color: #1d7bbf !important;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */

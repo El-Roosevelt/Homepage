@@ -158,3 +158,16 @@ $font-weight_enlace: bold;
     padding-bottom: 16px !important;
   }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+  color: $primary;
+}
+a {
+    color: $link-color !important;
+    font-weight: bold;
+}

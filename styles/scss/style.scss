@@ -4,6 +4,7 @@ $warning: #b75e00;
 $color_texto_oscuro: black;
 $color_fondo: #f3f2f1;
 $link-color: #1d7bbf; //call to action
+$btn-form:#c216db;
 
 $Color_F_Claro: #F3F2F1;
 $Color_Acc_ClaroINFORMATION: #84329B;
@@ -71,6 +72,25 @@ $font-weight_enlace: bold;
   width: 22vh;
   font-size: 15px;
 }
+/*form*/
+
+  .form-label {
+    color: #6a1b9a;
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+    font-weight: 600;
+  }
+
+  .btn-primary:hover {
+    background-color: #580d8a;
+    border-color: #580d8a;
+  }
+
+
 @media (min-width: 1600px) {
   .profile-menu {
     width: 26vh;

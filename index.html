@@ -11,26 +11,26 @@
       <div
         class="col-2 p-0 m-0 d-flex flex-column justify-content-center align-content-start"
       >
-        <img class="img-menu" src="/assets/list.svg" alt="" />
+        <img class="img-menu" src="./assets/list.svg" alt="" />
       </div>
       <div class="col-9 d-flex flex-row align-items-center">
         <img
           class="img-logo"
           height=""
-          src="/assets/marcador-de-posicion.png"
+          src="./assets/marcador-de-posicion.png"
           alt=""
         />
         <h1 style="font-size: 55px">El Rooselvelt</h1>
       </div>
-      <div class="col-1 profile-menu-container">
-        <img src="/assets/person-circle.svg" class="img-login" onclick="toggleMenu()" />
-        <div class="profile-menu" id="profileMenu">
+      <div class="col-1 profile-menu-container d-flex flex-column justify-content-center align-items-center" id="btnProfile">
+        <img src="./assets/person-circle.svg" class="img-login" onclick="toggleMenu()" />
+        <div class="profile-menu" id="profileMenu"
+        >
           <a href="#">Perfil</a>
           <a href="#">Cambiar Cuenta</a>
           <a href="#">Cerrar sesión</a>
         </div>
       </div>
-
       <!--<div
         class="dropdown col-1 p-0 m-0 d-flex flex-column justify-content-center align-items-center"
       >
@@ -42,6 +42,6 @@
       <section></section>
     </main>
     <footer class="row"></footer>
-    <script src="index.js"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>

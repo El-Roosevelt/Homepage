@@ -11871,9 +11871,9 @@ textarea.form-control-lg {
 }
 
 .img-login {
-  height: 100px;
-  width: 100px;
-  margin: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 2px;
   transition: all 0.5s;
 }
 
@@ -11907,10 +11907,17 @@ textarea.form-control-lg {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  height: 200px;
+  height: 12vh;
+  width: 10vh;
   font-size: 18px;
 }
 
+@media (min-width: 1600px) {
+  .profile-menu {
+    width: 14vh;
+    font-size: 18px;
+  }
+}
 .profile-menu a {
   display: block;
   padding: 10px;

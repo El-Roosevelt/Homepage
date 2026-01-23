@@ -29,7 +29,7 @@
       <div
         class="container-fluid d-flex justify-content-between m-0 p-0 bg-secondary"
       >
-        <div class="d-flex align-items-center px-2 bg-light" id="toggleSidebar">
+        <div class="d-flex align-items-center px-2 bg-secondary" id="toggleSidebar">
           <svg
             id="menu-button"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,12 @@
           </svg>
         </div>
         <div
-          class="d-flex justify-content-center align-content-center align-items-center py-1"
+          class="d-flex justify-content-center align-content-center align-items-center"
         >
-          <img class="w-50 align-self-center" src="./assets/El Roosevelt.png" />
+          <img class="img-logo " src="./assets/marcador-de-posicion.png" />
+          <h1 style="font-weight: bold; font-style: oblique; font-size: 50px; color: var(--bs-primary-text-emphasis)" >Roosevelt</h1>
         </div>
-        <div class="d-flex align-items-center px-2 bg-light">
+        <div class="d-flex align-items-center profile-menu-container px-2 bg-secondary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="46"
@@ -58,6 +59,8 @@
             fill="currentColor"
             class="bi bi-person-circle"
             viewBox="0 0 16 16"
+            onclick="toggleMenu()"
+            id="btnProfile"
           >
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
             <path
@@ -65,6 +68,16 @@
               d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
             />
           </svg>
+          <div class="profile-menu" id="profileMenu">
+            <a href="#">Perfil</a>
+            <a href="#">Cambiar Cuenta</a>
+            <a href="#">Cerrar sesión
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+  <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+  <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+</svg>
+            </a>
+          </div>          
         </div>
       </div>
     </header>
@@ -232,9 +245,7 @@
       <div class="tab-content w-100 p-4">
         <div class="tab-pane fade show active" id="home">
           <section
-            class="d-flex flex-column text-center align-items-center my-5"
-          >
-            <h1 class="display-2 fw-bold">El Roosevelt</h1>
+            class="d-flex flex-column text-center align-items-center my-5"></section>
             <div
               class="d-flex justify-content-center mx-5 my-3 border border-2 rounded rounded-3 py-5 bg-secondary"
             >
@@ -303,10 +314,10 @@
         </div>
       </div>
     </div>
-    <footer class="bg-primary min-vh-5 justify-content-around">
+    <footer class="min-vh-5 justify-content-around">
       <div
-        class="d-flex justify-content-between align-items-center text-white py-3 px-4 m-0"
-        style="background-color: #3e1254; font-family: sans-serif"
+        class="bg-secondary d-flex justify-content-between align-items-center text-white py-3 px-4 m-0"
+        style="font-family: sans-serif"
       >
         <span> roosevelt@gmail.com</span>
         <span>Contacta con nosotros</span>

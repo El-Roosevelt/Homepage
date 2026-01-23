@@ -18,8 +18,8 @@ $font-weight_enlace: bold;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .img-logo {
-  height: 150px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   margin: 5px;
   transition: all 0.5s;
 }
@@ -28,26 +28,23 @@ $font-weight_enlace: bold;
   transform: scale(1.1);
 }
 
-.img-login {
-  height: 100px;
-  width: 100px;
-  margin: 5px;
+#btnProfile {
+  height: 60px;
+  width: 60px;
+  margin: 3px;
   transition: all 0.5s;
 }
 
-.img-login:hover {
+#btnProfile:hover {
   transform: scale(1.1);
+  color: black;
 }
 
-.img-menu {
-  height: 120px;
-  width: 120px;
+#menu-button {
+  height: 60px;
+  width: 60px;
   margin: 5px;
   transition: all 0.5s;
-}
-
-.img-menu:hover {
-  transform: scale(1.1);
 }
 
 .profile-menu-container {
@@ -70,9 +67,14 @@ $font-weight_enlace: bold;
   background: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  height: 200px;
-  font-size: 18px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);  
+  width: 22vh;
+  font-size: 15px;
+}
+@media (min-width: 1600px) {
+  .profile-menu {
+    width: 26vh;
+  }
 }
 
 .profile-menu a {

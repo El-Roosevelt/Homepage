@@ -142,69 +142,75 @@
     </div>
     <div class="tab-content w-100 p-4">
       <div class="tab-pane fade show active" id="home">
-        <section class="d-flex flex-column text-center align-items-center my-5"></section>
-        <div class="d-flex justify-content-center mx-5 my-3 border border-2 rounded rounded-3 py-5 bg-secondary">
-          <div class="d-flex flex-column justify-content-center w-50 px-5">
-            <h3 class="display-5 mb-3">Tu compañero indispensable.</h3>
-            <p class="lead text-light">
-              Roosevelt es una aplicación de mapas creada para ayudar a las
-              personas mayores o con discapacidades a desplazarse por zonas
-              de difícil acceso en una ciudad o pueblo. ¡Os ayudaremos a
-              orientaros rápidamente, evitar zonas peligrosas y encontrar
-              lugares interesantes!
-            </p>
-            <button class="w-25 btn btn-primary align-self-center">
-              Ir al mapa
+        <section class="d-flex flex-column text-center align-items-center my-5">
+          <div class="d-flex justify-content-center mx-5 my-3 border border-2 rounded rounded-3 py-5 bg-secondary">
+            <div class="d-flex flex-column justify-content-center w-50 px-5">
+              <h3 class="display-5 mb-3">Tu compañero indispensable.</h3>
+              <p class="lead text-light">
+                Roosevelt es una aplicación de mapas creada para ayudar a las
+                personas mayores o con discapacidades a desplazarse por zonas
+                de difícil acceso en una ciudad o pueblo. ¡Os ayudaremos a
+                orientaros rápidamente, evitar zonas peligrosas y encontrar
+                lugares interesantes! Puedes navegarte y guardar tus rutas favoritas!
+              </p>
+              <button class="w-25 btn btn-primary align-self-center">
+                Ir al mapa
+              </button>
+            </div>
+            <div class="d-flex w-50 justify-content-end">
+              <img src="./assets/ruta_alicante.jpg" class="img-fluid rounded rounded-4 w-75 pe-5" alt="ruta_alicante" />
+            </div>
+          </div>
+        </section>
+      <section class="contact-section py-5">
+  <div class="container">
+    
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get In Touch</h2>
+      <p class="text-uppercase">Contact Us</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <form class="row g-4 contact-form p-4 rounded needs-validation" novalidate>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Surname" required>
+            <div class="invalid-feedback">Please enter your surname.</div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="tel" class="form-control" placeholder="Phone">
+          </div>
+
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-custom px-5">
+              Send Message
             </button>
           </div>
-          <div class="d-flex w-50 justify-content-end">
-            <img src="./assets/ruta_alicante.jpg" class="img-fluid rounded rounded-4 w-75 pe-5" alt="ruta_alicante" />
-          </div>
-        </div>
-        </section>
-        <section class="my-5">
-          <div>
-            <form class="row g-3 needs-validation" novalidate style="max-width: 700px; margin: auto;">
-              <div class="col-md-6">
-                <label for="validationName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="validationName" placeholder="Your name" required>
-                <div class="invalid-feedback">
-                  Please enter your name.
-                </div>
-              </div>
 
-              <div class="col-md-6">
-                <label for="validationEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="validationEmail" placeholder="Your email" required>
-                <div class="invalid-feedback">
-                  Please enter a valid email address.
-                </div>
-              </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-              <div class="col-md-6">
-                <label for="validationPhone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="validationPhone" placeholder="Your phone number" required>
-                <div class="invalid-feedback">
-                  Please enter your phone number.
-                </div>
-              </div>
-
-              
-              <div class="col-12">
-                <label for="validationMessage" class="form-label">Your Message</label>
-                <textarea class="form-control" id="validationMessage" rows="4" placeholder="Write your message here..."
-                  required></textarea>
-                <div class="invalid-feedback">
-                  Please enter a message.
-                </div>
-              </div>
-
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
-        </section>
       </div>
       <div class="tab-pane fade show" id="mapa">
         <h1>Mapa content</h1>

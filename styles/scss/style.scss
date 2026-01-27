@@ -80,20 +80,30 @@ $font-weight_enlace: bold;
 
 /*hero*/
 .hero {
-  height: 100vh; /* ocupa toda la pantalla */
-  background-image: url("/assets/fondo_hero.jpg");
-  background-size: cover;      /* cubre todo */
-  background-position: center; /* centrada */
-  background-repeat: no-repeat;
+  
+
+  background: linear-gradient(
+    135deg,
+    #271151,
+    $secondary
+  );
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(211, 142, 176, 0.4); /*  con 40% opacidad */
+ 
   z-index: 0;
  
+}
+
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
 
@@ -112,8 +122,14 @@ $font-weight_enlace: bold;
  
   p {
     color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
   }
 }
+
 
 .contact-form {
   background-color: $color_form_background !important;

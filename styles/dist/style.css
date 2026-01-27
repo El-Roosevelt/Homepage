@@ -11951,12 +11951,13 @@ textarea.form-control-lg {
 }
 
 .sidebar .nav-link {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
 .sidebar.expanded .nav-link {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 10px;
